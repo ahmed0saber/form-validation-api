@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    border: none;
+    outline: none;
+    font-family: "Glory", sans-serif;
+}
+
+body {
+    background-color: #fdfdfd;
+}
+
+header {
+    padding: 12px 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    box-shadow: 0px 0px 2px 2px #32323212;
+    background-color: #fdfdfd;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+header h3 {
+    font-size: 28px;
+    color: #323232;
+}
+
+header div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+}
+
+header div a {
+    color: #323232;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 6px 12px;
+    transition-duration: 0.2s;
+}
+
+header div a.active {
+    background-color: #323232;
+    color: #fdfdfd;
+}
+
+header div a:hover {
+    opacity: 0.8;
+}
+
+main {
+    padding: 12px 24px;
+}
+
+main h1 {
+    margin: 0 0 6px 0;
+    color: #323232;
+    font-size: 32px;
+}
+
+main p {
+    color: #323232;
+    font-size: 18px;
+}
+
+main .btn {
+    font-size: 18px;
+    border: 2px solid #323232;
+    padding: 8px 24px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.2s;
+    margin: 12px 0 0 0;
+    color: #fdfdfd;
+    background-color: #323232;
+}
+
+main .btn:hover {
+    color: #323232;
+    background-color: #fdfdfd;
+}
+
+section {
+    padding: 12px 24px;
+}
+
+section h2 {
+    color: #323232;
+    font-size: 26px;
+}
+
+section p {
+    color: #323232;
+    font-size: 18px;
+    margin-top: 12px;
+}
+
+section p span {
+    display: inline-block;
+    padding: 2px 6px;
+    background-color: #32323212;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border: 1px solid #32323212;
+}
+
+.separator {
+    width: calc(100% - 48px);
+    display: block;
+    margin: 0 auto;
+    height: 2px;
+    background-color: #32323212;
+}
+
+.link {
+    text-decoration: none;
+    color: #007bff;
+}
+
+@media (max-width: 375px) {
+    header {
+        flex-direction: column;
+    }
+}
